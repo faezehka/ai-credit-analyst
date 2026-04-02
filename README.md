@@ -1,16 +1,49 @@
-# React + Vite
+# AI Credit Analyst
+### GenAI-Powered Credit Risk Assessment for Financial Services
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent credit risk assessment tool that leverages Large Language Models to analyze financing applications and generate structured risk reports — built for commercial vehicle financial services.
 
-Currently, two official plugins are available:
+## What It Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Ingests structured financial data from loan applications
+- Analyzes credit risk using LLMs with domain-specific prompting
+- Generates structured credit reports with risk ratings, financial analysis, and recommended terms
+- Presents results in an interactive dashboard with risk gauge and tabbed report
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React + Vite
+- **AI Engine:** Anthropic Claude API (Sonnet 4)
+- **Prompt Engineering:** Structured credit analysis prompts with financial domain context
+- **Visualization:** Custom SVG risk gauge
 
-## Expanding the ESLint configuration
+## Running Locally
+```bash
+git clone https://github.com/faezehka/ai-credit-analyst.git
+cd ai-credit-analyst
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create a `.env` file in the root:
+```
+VITE_API_KEY=your_anthropic_api_key_here
+```
+
+Then start the dev server:
+```bash
+npm run dev
+```
+
+## How It Works
+
+1. Select a financing applicant or enter custom data
+2. Click "Run AI Credit Analysis"
+3. The LLM analyzes financial metrics, industry context, and risk indicators
+4. A structured credit memo is generated with risk rating, analysis, and recommended terms
+
+## Future Roadmap
+
+- RAG integration with internal credit policy documents
+- Backend API server (FastAPI) for production deployment
+- Batch processing for application pipelines
+- MLOps pipeline with prompt versioning and evaluation metrics
