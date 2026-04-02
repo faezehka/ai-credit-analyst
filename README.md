@@ -1,4 +1,6 @@
 # AI Credit Analyst
+Live Demo: https://ai-credit-analyst-mocha.vercel.app
+
 ### GenAI-Powered Credit Risk Assessment for Financial Services
 
 An intelligent credit risk assessment tool that leverages Large Language Models to analyze financing applications and generate structured risk reports — built for commercial vehicle financial services.
